@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "abcd12345",
+  "database": "tugasbackend_db",
+  "entities": ["src/models/*.{ts,js}"],
+  "migrationsTableName": "tugasbackend_migration",
+  "migrations": ["src/models/*.{ts,js}"],
+  "cli": {
+    "migrationsDir": "src/migration"
+  }
+}
